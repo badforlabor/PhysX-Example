@@ -31,7 +31,7 @@ Description			: This example demonstrates how to create joints (constraints) bet
 
 
 //-------Loading PhysX libraries (32bit only)----------//
-
+#if VC2010
 #ifdef _DEBUG //If in 'Debug' load libraries for debug mode 
 #pragma comment(lib, "PhysX3DEBUG_x86.lib")				//Always be needed  
 #pragma comment(lib, "PhysX3CommonDEBUG_x86.lib")		//Always be needed
@@ -41,6 +41,7 @@ Description			: This example demonstrates how to create joints (constraints) bet
 #pragma comment(lib, "PhysX3_x86.lib")	
 #pragma comment(lib, "PhysX3Common_x86.lib") 
 #pragma comment(lib, "PhysX3Extensions.lib")
+#endif
 #endif
 
 using namespace std;
